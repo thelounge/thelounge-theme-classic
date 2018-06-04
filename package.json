@@ -1,7 +1,7 @@
 {
   "name": "thelounge-theme-classic",
   "version": "1.0.0",
-  "description": "",
+  "description": "Classic theme for The Lounge, to get a v2 look with The Lounge v3",
   "main": "package.json",
   "thelounge": {
     "name": "Classic",
