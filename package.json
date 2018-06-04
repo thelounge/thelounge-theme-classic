@@ -1,0 +1,31 @@
+{
+  "name": "thelounge-theme-classic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "thelounge": {
+    "name": "Classic",
+    "type": "theme",
+    "css": "classic.css"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/thelounge/thelounge-theme-classic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thelounge/thelounge-theme-classic.git"
+  },
+  "keywords": [
+    "thelounge",
+    "thelounge-theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/thelounge/thelounge-theme-classic/issues"
+  },
+  "devDependencies": {
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "scripts": {
+    "test": "stylelint classic.css"
+  }
+}
