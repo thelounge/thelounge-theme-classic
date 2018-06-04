@@ -1,0 +1,160 @@
+:root {
+  --body-bg-color: #455164;
+}
+
+#viewport {
+  padding: 4px;
+  padding-left: 0;
+}
+
+#viewport.menu-open {
+  /* On desktop view, .menu-open means menu is closed... */
+  padding-left: 4px;
+}
+
+#viewport #loading, /* ... except on pages without a menu */
+#viewport #sign-in {
+  margin-left: 4px;
+}
+
+/* Sidebar and footer */
+
+#sidebar .scrollable-area {
+  padding-top: 10px;
+}
+
+#sidebar .chan {
+  transition: color 0.2s;
+}
+
+#footer {
+  background: rgba(0, 0, 0, 0.06);
+  margin: 0 4px;
+  border-radius: 2px;
+}
+
+#footer button {
+  color: #9ca5b4;
+}
+
+#sidebar .chan:hover,
+#footer button:hover,
+#sidebar .active,
+#sidebar .active:hover {
+  background: transparent;
+}
+
+/* End sidebar and footer */
+
+#windows .window::before {
+  background: #f4f4f4;
+  background-image: linear-gradient(#f4f4f4, #ececec);
+  border-bottom: 1px solid #d7d7d7;
+  content: " ";
+  height: 10px;
+  flex-shrink: 0;
+}
+
+#windows .window {
+  border-radius: 2px;
+}
+
+#windows {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* Message input */
+
+#form {
+  background: #eee;
+  border-top: 1px solid #ddd;
+  padding: 5px;
+}
+
+#windows #form .input {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 0;
+}
+
+#form #nick {
+  display: block;
+}
+
+#form #submit {
+  color: #9ca5b4;
+}
+
+/* End message input */
+
+/* Header icon buttons */
+
+#viewport .lt,
+#viewport .rt,
+#chat button.menu {
+  color: #ccc;
+}
+
+/* End header icon buttons */
+
+/* Previews */
+
+#chat .toggle-content {
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+#chat .toggle-thumbnail,
+#chat .toggle-content .toggle-text {
+  padding: 6px;
+}
+
+#chat .toggle-content .toggle-text {
+  padding-left: 0;
+}
+
+#chat .toggle-content .thumb {
+  max-width: 48px;
+  max-height: 38px;
+}
+
+/* End previews */
+
+kbd {
+  background-color: #fcfcfc;
+  background-image: none;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+  color: #555;
+  font-size: 12px;
+  min-width: 20px;
+  padding: 3px;
+}
+
+@media (max-width: 768px) {
+  #viewport,
+  #viewport.menu-open {
+    padding: 0;
+  }
+
+  #viewport #loading,
+  #viewport #sign-in {
+    margin: 0;
+  }
+
+  #footer {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  #windows .window::before {
+    display: none;
+  }
+
+  #windows .window {
+    border-radius: 0;
+  }
+}
