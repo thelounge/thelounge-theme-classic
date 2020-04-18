@@ -1,5 +1,6 @@
 :root {
   --body-bg-color: #455164;
+  --highlight-bg-color: transparent;
 }
 
 #viewport {
@@ -15,6 +16,32 @@
 #viewport #loading, /* ... except on pages without a menu */
 #viewport #sign-in {
   margin-left: 4px;
+}
+
+#chat .time,
+#chat .channel .message.highlight .time {
+  color: #ddd;
+}
+
+#chat .channel .message.highlight {
+  border: 0;
+}
+
+#chat .channel .message.highlight .time {
+  padding-left: 10px;
+  width: 55px;
+}
+
+#chat .channel .message.highlight .content {
+  border-left-color: #f6f6f6;
+}
+
+#chat .error,
+#chat .error .from,
+#chat .channel .highlight .from,
+#chat .channel .highlight .text,
+#chat .channel .highlight .user {
+  color: #f00;
 }
 
 /* Sidebar and footer */
